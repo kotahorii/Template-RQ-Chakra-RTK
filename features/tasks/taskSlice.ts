@@ -1,12 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { RootState } from '../../app/store'
-
-type PostTask = {
-  id: string
-  title: string
-  content: string
-  tag: string
-}
+import { PostTask } from '../../types/taskTypes'
 
 const initialState = {
   editedTask: {
